@@ -100,19 +100,14 @@ LifeUp/
 
 ### 📦 1. 克隆并安装依赖
 ```bash
-git clone https://github.com/your-username/LifeUp.git
-cd LifeUp
+git clone https://github.com/today0910/LifeUp-Adventure.git
+cd LifeUp-Adventure
 npm install
 ```
 
 ### 🛠️ 2. 启动开发环境
 ```bash
 npm run dev
-```
-
-### 🏗️ 3. 构建生产版本
-```bash
-npm run build
 ```
 
 ---
@@ -143,4 +138,3 @@ LifeUp 采用**本地优先**的数据方案，充分保护用户隐私：
   <br>
   <sub>Created with 李紫嫣 | 2025</sub>
 </div>
-```
