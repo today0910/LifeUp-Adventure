@@ -1,5 +1,42 @@
-# Vue 3 + Vite
+# 🚀 LifeUp - 游戏化生活管理系统
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> **生活就是一场伟大的冒险。将待办事项变成史诗任务，击败拖延恶龙！**
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+LifeUp 是一款基于 **Vue 3 + Vite** 开发的游戏化任务管理应用。它将传统的待办事项（Todo List）与 RPG 养成元素相结合，通过完成任务获得经验与金币，解锁技能，购买奖励，旨在通过趣味性的交互提升个人生产力。
+
+---
+
+## ✨ 核心功能
+
+- **📋 任务看板 (Quest Board)**：采用 Kanban 布局，支持任务拖拽状态切换。完成任务可获得金币（Gold）与经验值（EXP）。
+- **⏳ 专注地下城 (Focus Dungeon)**：内置番茄钟专注系统。提供不同难度的“关卡”（专注时长），通过专注击败怪物赚取高额收益。
+- **🌳 无限科技树 (Skill Tree)**：独特的被动技能系统。消费金币升级技能（如：炼金术增加收益、时间管理增加奖励等），实现自我属性进化。
+- **🛒 便利商店 (Reward Shop)**：激励系统。用户可以自定义现实生活中的奖励（如：喝一杯咖啡、看一场电影），并使用虚拟金币兑换。
+- **📊 个人面板 (Profile)**：实时记录等级、属性数值、冒险足迹及打卡日历，见证成长的每一步。
+- **🌓 奶油/暗黑模式**：极致的视觉体验，完美适配明亮奶油风与高级感暗黑模式。
+
+---
+
+## 🛠️ 技术栈
+
+- **框架**: [Vue 3](https://v3.vuejs.org/) (Composition API + `<script setup>`)
+- **构建工具**: [Vite](https://vitejs.dev/)
+- **状态管理**: [Pinia](https://pinia.vuejs.org/) (实现持久化数据存储)
+- **路由**: [Vue Router](https://router.vuejs.org/)
+- **图标库**: [Lucide Vue Next](https://lucide.dev/)
+- **样式**: CSS3 (原生变量 + Flex/Grid 布局)
+
+---
+
+## 🚀 项目运行步骤 (重要)
+
+为确保项目顺利运行，请按照以下步骤在本地环境进行操作：
+
+### 1. 环境准备
+确保你的电脑已安装 [Node.js](https://nodejs.org/) (建议版本 v16.x 或以上) 以及 npm。
+
+### 2. 克隆项目
+如果你已经下载了源码压缩包，请忽略此步并进入项目文件夹。
+```bash
+git clone https://github.com/你的用户名/LifeUp.git
+cd LifeUp
