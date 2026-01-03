@@ -1,0 +1,117 @@
+/* 引入全局字体 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&family=Inter:wght@400;600;800&display=swap');
+
+/* 主题变量系统 */
+:root {
+  /* 明亮模式：奶油黄基调 */
+  --bg-color: #FFFDE7;       /* 页面背景 */
+  --sidebar-bg: #FFFDE7;    /* 侧边栏背景 */
+  --card-bg: #FFFFFF;        /* 卡片背景 */
+  --text-main: #4E342E;      /* 主要文字：深可可棕 */
+  --text-sub: #8D6E63;       /* 次要文字：棕褐色 */
+  --primary: #FFC107;        /* 核心主色：琥珀金 */
+  --border-color: #FFE082;   /* 边框颜色 */
+  --hover-bg: #FFF9C4;       /* 悬浮背景 */
+  --shadow: rgba(255, 193, 7, 0.15); /* 阴影色 */
+  --column-bg: #f8f5f0;      /* 看板列背景 */
+  --input-bg: #faf7f2;       /* 输入框背景 */
+  --btn-text: #4E342E;       /* 按钮文字 */
+}
+
+body.dark-mode {
+  /* 暗黑模式：深棕色基调 */
+  --bg-color: #2D1B18;       /* 页面背景：极深可可棕 */
+  --sidebar-bg: #2D1B18;     /* 侧边栏背景 */
+  --card-bg: #3E2723;        /* 卡片背景：深巧克力棕 */
+  --text-main: #FFF8E1;      /* 主要文字：浅米黄 */
+  --text-sub: #D7CCC8;       /* 次要文字 */
+  --primary: #FFB300;        /* 核心主色：亮琥珀 */
+  --border-color: #5D4037;   /* 边框：中棕色 */
+  --hover-bg: #5D4037;       /* 悬浮背景 */
+  --shadow: rgba(0, 0, 0, 0.4); /* 阴影色 */
+  --column-bg: #4A2F2A;      /* 看板列背景 */
+  --input-bg: #4A2F2A;       /* 输入框背景 */
+  --btn-text: #FFF8E1;       /* 按钮文字 */
+}
+
+/* 全局基础样式 */
+html, body, #app {
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+  padding: 0;
+  font-family: 'Nunito', 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color 0.3s, color 0.3s;
+  overflow: hidden;
+}
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
+}
+
+/* 全局滚动条样式 */
+::-webkit-scrollbar { 
+  width: 6px; 
+}
+
+::-webkit-scrollbar-thumb { 
+  background: var(--border-color); 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--hover-bg);
+}
+
+/* 全局按钮样式 */
+button {
+  cursor: pointer;
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #e6ac00;
+  transform: translateY(-1px);
+}
+
+body.dark-mode button {
+  background: var(--primary);
+}
+
+body.dark-mode button:hover {
+  background: #e69500;
+}
+
+/* 全局输入框样式 */
+input {
+  background: var(--input-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: 2px solid var(--primary);
+  border-color: var(--primary);
+}
+
+/* 全局卡片样式 */
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: all 0.3s;
+}
+
+body.dark-mode .card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
